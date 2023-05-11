@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap");
 
-html {
-  font-family: "M PLUS Rounded 1c", sans-serif;
-}
-
 :root {
   --nav-bg-color: rgb(25, 68, 138);
   --nav-text-color: rgb(208, 216, 214);
@@ -11,11 +7,16 @@ html {
   --h1-color: rgb(25, 68, 138);
 }
 
+html {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background-color: var();
+  box-sizing: border-box;
 }
+
 .navbar-right > span {
   color: var(--nav-text-color);
 }
@@ -52,7 +53,7 @@ body {
 }
 
 .hero {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -67,7 +68,6 @@ body {
   justify-content: center;
   height: 35rem;
   align-items: center;
-
 }
 
 .content {
@@ -95,6 +95,12 @@ body {
   max-width: 50rem;
 }
 
+.emoji-pc {
+  width: 3rem;
+  position: absolute;
+  top: 8.5rem;
+}
+
 .hero-text > h1 {
   box-shadow: inset 0 0 0 0 #54b3d6;
   font-size: 40px;
@@ -105,7 +111,7 @@ body {
 }
 
 .hero-text > h1:hover {
-  box-shadow: inset 335px 0 0 0 #ffffff;
+  box-shadow: inset 365px 0 0 0 #ffffff;
   color: rgb(83, 140, 201);
 }
 
@@ -120,9 +126,11 @@ body {
 }
 
 .hero-text > p:hover {
-  box-shadow: inset 335px 0 0 0 #ffffff;
+  box-shadow: inset 405px 0 0 0 #ffffff;
   color: rgb(83, 140, 201);
 }
+
+
 
 .hero-text > span {
   display: flex;
@@ -133,7 +141,7 @@ body {
 }
 
 .hero-text > span a:hover {
-  box-shadow: inset 335px 0 0 0 #ffffff;
+  box-shadow: inset 340px 0 0 0 #ffffff;
   color: rgb(83, 140, 201);
 }
 
@@ -148,11 +156,10 @@ body {
   align-items: center;
 }
 .hero-img > img {
-  width: 50%;
-  height: 30%;
+  height: 25rem;
+  width: 35rem;
   justify-content: center;
-  border: 5px solid red;
-  border-radius: 10px;
+  border-radius: 2rem;
 }
 
 .skills {
@@ -179,13 +186,9 @@ body {
   margin-right: 0.2rem;
 }
 
-
-
 /*About Section*/
 
 .about {
-  height: 100vh;
-  width: 100%;
   display: flex;
   flex-direction: column;
   position: relative;
@@ -194,7 +197,7 @@ body {
 }
 
 .about-conteiner {
-  margin: 3rem auto ;
+  margin: 3rem auto;
 }
 .about-content {
   align-items: center;
@@ -242,3 +245,85 @@ body {
   line-height: 1;
   color: var(--h1-color);
 }
+
+/*Exp Section*/
+
+.exp {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 3rem 3rem;
+  padding-left: 2rem;
+}
+
+.exp > h3 {
+  color: var(--h1-color);
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.exp-container {
+  display: flex;
+  gap: 5px;
+  margin: 3rem auto;
+}
+
+.box-exp {
+  border-right: 2px;
+  margin-right: 2rem;
+  padding-right: 2rem;
+  margin-top: 1rem;
+}
+
+.date {
+  font-size: 15px;
+  bottom: 0;
+}
+
+.box-exp > h4 {
+  color: var(--h1-color);
+  font-size: 20px;
+}
+
+.box-exp p {
+  color: var(--h1-color);
+}
+
+/*Formazione*/
+
+.formazione {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 3rem 3rem;
+  padding-left: 2rem;
+}
+
+.formazione > h3 {
+  color: var(--h1-color);
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.form-container {
+  display: flex;
+  gap: 15px;
+  margin: 3rem auto;
+}
+.box-form {
+  border-right: 2px;
+  margin-right: 2rem;
+  padding-right: 2rem;
+  margin-top: 1rem;
+}
+
+.box-form > h4 {
+  color: var(--h1-color);
+  font-size: 20px;
+}
+
+.box-form p {
+  color: var(--h1-color);
+}
+
+
