@@ -327,3 +327,40 @@ body {
 }
 
 
+/*Altre Esperienze ed Altre Competenze*/
+
+.other-exp-other-comp {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 2rem;
+  padding-left: 2.9rem ;
+  padding-right: 1rem;
+}
+
+.other-exp-other-comp h3 {
+  color: var(--h1-color);
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.other-exp-conteiner {
+  display: flex;
+  gap: 15px;
+  margin: 3rem auto;
+  border-right: 2px;
+  margin-right: 2rem;
+  padding-right: 2rem;
+  margin-top: 1rem;
+}
+
+.other-experience h4,
+.other-comp h4 {
+  color: var(--h1-color);
+  font-size: 20px;
+
+}
+
+.other-comp p, 
+.other-experience p {
+  color: var(--h1-color)
+}
